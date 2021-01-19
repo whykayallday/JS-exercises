@@ -1,7 +1,10 @@
-const repeatString = function() {
+const repeatString = function(string, repeats) {
     let testStr = '';
-    for(let i = 0; i < 3; i++){
-        testStr += 'hey';
+    if(repeats < 0) {
+        return 'ERROR';
+    }
+    for(let i = 0; i < repeats; i++){
+        testStr += string;
     }
     return testStr;
 }
