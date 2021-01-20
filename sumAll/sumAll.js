@@ -1,7 +1,10 @@
 const sumAll = function(firstNum, lastNum) {
     let sumValue = 0;
 
-    if (!Number.isInteger(firstNum || !Number.isInteger(lastNum))){
+    if (!Number.isInteger(firstNum) || !Number.isInteger(lastNum)){
+        return 'ERROR';
+    }
+    else if (Array.isArray(firstNum) || Array.isArray(lastNum)) {
         return 'ERROR';
     }
     else if(firstNum <= 0 || lastNum <= 0) {
