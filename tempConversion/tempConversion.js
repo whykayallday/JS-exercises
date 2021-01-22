@@ -12,7 +12,7 @@ const ctof = function(inputTempC) {
 
   tempConversion = roundToFixed(tempConversion);
 
-  return Number(tempConversion);
+  return Number(tempConversion);   
 }
 
 
